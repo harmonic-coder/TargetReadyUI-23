@@ -1,0 +1,10 @@
+.drop-down{
+    padding: 25px;
+    width: 200px;
+    float: right;
+}
+
+.drop-down Select{
+    right:auto;
+}
+
