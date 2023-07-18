@@ -1,0 +1,32 @@
+.drop-down{
+    padding: 25px;
+    width: 200px;
+    float: right;
+}
+.add-button{
+    padding: 25px;
+    width: 200px;
+    float: left;
+}
+
+.drop-down Select{
+    right:auto;
+}
+
+.dd1{
+    width: 150px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.dd2{
+    width: 150px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.dd3{
+    width: 200px;
+    padding: 10px;
+    display: inline-block;
+}
