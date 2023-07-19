@@ -15,7 +15,6 @@ import {
   randomTraderName,
   randomUpdatedDate,
 } from "@mui/x-data-grid-generator";
-
 import { AiOutlinePlus, AiFillSchedule, AiTwotoneDelete } from "react-icons/ai";
 import {GrAdd} from "react-icons/gr";
 
@@ -115,6 +114,7 @@ const ExamMainPage = () => {
   };
 
   return (
+    <>
     <div className="main-div">
       <div className="top-part">
         <div className="add-button">
@@ -202,12 +202,13 @@ const ExamMainPage = () => {
             </FormControl>
           </Box>
         </div>
-      </div>
-
-      <div className="table">
-        <BasicTable/>
-      </div>
+      </div>    
     </div>
+    
+        <div className="table">
+        <BasicTable/>
+        </div>
+      </>
   );
 };
 
