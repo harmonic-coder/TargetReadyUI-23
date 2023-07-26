@@ -6,6 +6,7 @@ import Contact from "./Contact"
 import NotFound from "./NotFound"
 import ExamMainPage from "./ExamMainPage"
 import BasicTable from "./table/BasicTable"
+import DltPop from "./ExamMainPage/dltpopover"
 
 const PageRoutes = () => {
     return (
@@ -15,7 +16,8 @@ const PageRoutes = () => {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/student" element={<Student />} />
           <Route exact path="/exam" element={<ExamMainPage />} />
-          <Route exact path="/bt" element={<BasicTable />} />
+          <Route exact path="/dlt" element={<DltPop />} />
+          {/* <Route exact path="/bt" element={<BasicTable />} /> */}
           <Route path='*' element={<NotFound />}/>
         </Routes>
     )
