@@ -4,10 +4,12 @@ import Home from "./Home"
 import About from "./About"
 import Contact from "./Contact"
 import NotFound from "./NotFound"
-import ExamMainPage from "./ExamMainPage"
+import ClassesAndSubjects from "./ClassesAndSubjects"
 import BasicTable from "./table/BasicTable"
-import DltPop from "./ExamMainPage/dltpopover"
-
+import BasicTableStudent from "./table-student/Basictable"
+import SchedulePage from "./SchedulePage"
+import SchedulePageStudent from "./SchedulePageStudent"
+import Leaderboard from "./Results/Leaderboard";
 const PageRoutes = () => {
     return (
         <Routes>
@@ -15,9 +17,11 @@ const PageRoutes = () => {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/student" element={<Student />} />
-          <Route exact path="/exam" element={<ExamMainPage />} />
-          <Route exact path="/dlt" element={<DltPop />} />
-          {/* <Route exact path="/bt" element={<BasicTable />} /> */}
+          <Route exact path="/classes+subjects" element={<ClassesAndSubjects />} />
+          <Route exact path="/schedule" element={<SchedulePage />} />
+          <Route exact path="/schedule+student" element={<SchedulePageStudent />} />
+          <Route exact path="/schedule+student" element={<SchedulePageStudent />} />
+          <Route exact path="/lb" element={<Leaderboard />} />
           <Route path='*' element={<NotFound />}/>
         </Routes>
     )
